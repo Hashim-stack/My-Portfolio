@@ -17,7 +17,10 @@ const Header = () => {
       </h1>
       {/* <p className='max-w-2xl mx-auto font-Ovo'>Mern Satck developer</p> */}
       <div className="flex flex-col sm:flex-row items-center gap-4 mt-4">
-        <a href="#conatct" className="px-10 py-3 border border-white rounded-full bg-black text-white flex items-center gap-2">
+        <a
+          href="#conatct"
+          className="px-10 py-3 border border-white rounded-full bg-black text-white flex items-center gap-2"
+        >
           Contact Me
           <Image src={assets.right_arrow_white} alt="" className=" w-4" />
         </a>
