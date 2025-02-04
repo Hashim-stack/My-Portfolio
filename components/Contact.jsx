@@ -21,10 +21,9 @@ const Contact = () => {
       method: "POST",
       body: formData,
       headers: {
-        "Accept": "application/json",
+        Accept: "application/json",
       },
     });
-    
 
     const data = await response.json();
 
