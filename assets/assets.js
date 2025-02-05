@@ -103,15 +103,15 @@ export const serviceData = [
     { icon: assets.ui_icon, title: 'Master In MERN STACK', description: 'MongoDB, Express.js, React.js, Node.js ', link: '' },
     { icon: assets.web_icon, title: 'FrontEnd Development', description: 'Am good at Html, Css ,React.js, Next.js,', link: '' },
     { icon: assets.mobile_icon, title: 'BackEnd Developemt', description: 'Node.js, Express.js, Nest.js', link: '' },
-    { icon: assets.ui_icon, title: 'DataBasse', description: 'MongoDB,Postgrass Sql', link: '' },
+    { icon: assets.ui_icon, title: 'DataBase', description: 'MongoDB, Postgrass Sql', link: '' },
 ]
 
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript React Js, Next Js' },
-    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Computer Science' },
-    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
+    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript, Express.js, React.js, Node.js Next Js, Nest.js' },
+    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'Bachelor of Computer Applications' },
+    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 15 projects' }
 ];
 
 export const toolsData = [
-    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git
+    assets.mongodb, assets.firebase, assets.mongodb, assets.figma, assets.git
 ];
