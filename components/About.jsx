@@ -60,26 +60,31 @@ const About = ({ isDarkMode }) => {
             transition={{ duration: 0.8, delay: 1 }}
             className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl"
           >
-            {infoList.map(({ icon, iconDark, title, description }, index) => (
-              <motion.li
-                whileInView={{ scale: 1.05 }}
-                className="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50"
-                key={index}
-              >
-                <Image
-                  src={isDarkMode ? iconDark : icon}
-                  alt={title}
-                  className="w-7 mt-3 "
-                />
-                <h3 className="my-4 font-semibold text-gray-700 dark:text-white">
-                  {title}
-                </h3>
-                <p className="text-gray-600 text-sm dark:text-white/80">
-                  {description}
-                </p>
-              </motion.li>
-            ))}
+            {infoList.map(
+              ({ icon, iconDark, title, description, link }, index) => (
+                <motion.li
+                  whileInView={{ scale: 1.05 }}
+                  className="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50"
+                  key={index}
+                >
+                  <a href={link} target="_blank" rel="noopener noreferrer">
+                    <Image
+                      src={isDarkMode ? iconDark : icon}
+                      alt={title}
+                      className="w-7 mt-3"
+                    />
+                    <h3 className="my-4 font-semibold text-gray-700 dark:text-white">
+                      {title}
+                    </h3>
+                    <p className="text-gray-600 text-sm dark:text-white/80">
+                      {description}
+                    </p>
+                  </a>
+                </motion.li>
+              )
+            )}
           </motion.ul>
+
           <motion.h4
             initial={{ y: 20, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
@@ -88,21 +93,26 @@ const About = ({ isDarkMode }) => {
           >
             Im Good At
           </motion.h4>
-          {/* <motion.ul
-           initial={{ opacity: 0 }}
-           whileInView={{ opacity: 1 }}
-           transition={{ duration: 0.6 ,delay: 1.1}}
-          className="flex items-center gap-3 sm:gap-5">
+          <motion.ul
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.6, delay: 1.1 }}
+            className="flex items-center gap-3 sm:gap-5"
+          >
             {toolsData.map((tool, index) => (
               <motion.li
-              whileHover={{scale:1.1}}
-                className="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500"
+                whileHover={{ scale: 1.1 }}
+                className="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500 overflow-hidden"
                 key={index}
               >
-                <Image src={tool} alt=" " className="w-5 sm:w-7" />
+                <Image
+                  src={tool}
+                  alt=" "
+                  className="w-full h-full object-contain"
+                />
               </motion.li>
             ))}
-          </motion.ul> */}
+          </motion.ul>
         </motion.div>
       </motion.div>
     </motion.div>
