@@ -113,5 +113,5 @@ export const infoList = [
 ];
 
 export const toolsData = [
-    assets.mongodb, assets.e, assets.mongodb, assets.figma, assets.git
+    assets.mongodb, assets.firebase, assets.mongodb, assets.figma, assets.git
 ];
