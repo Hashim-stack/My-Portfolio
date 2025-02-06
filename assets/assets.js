@@ -9,6 +9,7 @@ import vscode from "./vscode.png";
 import firebase from "./firebase.png";
 import figma from "./figma.png";
 import git from "./git.png";
+
 import mongodb from "./mongodb.png";
 import right_arrow_white from "./right-arrow-white.png";
 import logo from "./logo.png";
@@ -42,6 +43,11 @@ import nextjs from "./nextjs.jpeg";
 import nodejs from "./nodejs.png";
 import pgadmin from "./pgadmin.jpeg";
 import react from "./react.png";
+import mern from "./mern.jpeg";
+import backend from "./backend.png";
+import frontend from "./frontend.png";
+import db from "./db.webp";
+
 
 export const assets = {
   expressjs,
@@ -53,6 +59,7 @@ export const assets = {
   bootsrap,
   user_image,
   code_icon,
+  frontend,
   code_icon_dark,
   edu_icon,
   edu_icon_dark,
@@ -78,11 +85,14 @@ export const assets = {
   arrow_icon_dark,
   menu_black,
   menu_white,
+  db,
   close_black,
   close_white,
   web_icon,
   mobile_icon,
   ui_icon,
+  mern,
+  backend,
   graphics_icon,
   right_arrow,
   send_icon,
@@ -92,48 +102,52 @@ export const assets = {
 
 export const workData = [
   {
-    title: "Crypto",
-    description: "Web Design",
-    bgImage: "/bitcoin.jpeg",
+    title: "CryptoMa",
+    description: "A website that displays real-time cryptocurrency values,helping users track market trends",
+    bgImage: "/cryptoma.png",
+    link: "https://github.com/HashimAyamon/CryptoMa"
   },
   {
-    title: "Fitness",
-    description: "Mobile App",
-    bgImage: "/fitness.jpeg",
-  },
-  {
-    title: "Gaming",
-    description: "Web Design",
+    title: "Mad Jack",
+    description: "An e-commerce platform designed for gaming enthusiasts.Build with NextJS(page Router) ",
     bgImage: "/gaming.png",
+    link: "https://github.com/HashimAyamon/Mad-Jack-Page-Router"
   },
   {
-    title: "Ai Image Generator",
-    description: "UI/UX Design",
-    bgImage: "/aiimage.webp",
+    title: "Nurtura",
+    description: "A healthcare website for women and children, developed using NextJs(App Router)",
+    bgImage: "/nurtura.jpeg",
+    link: "https://github.com/HashimAyamon/Nurtura"
+  },
+  {
+    title: "Rentify",
+    description: "Website For Luxury Real Estate.Where users can get real estate info",
+    bgImage: "/rentify.webp",
+    link: "https://github.com/HashimAyamon/Rentify"
   },
 ];
 
 export const serviceData = [
   {
-    icon: assets.ui_icon,
+    icon: assets.mern,
     title: "Master In MERN STACK",
     description: "MongoDB, Express.js, React.js, Node.js ",
     link: "",
   },
   {
-    icon: assets.web_icon,
+    icon: assets.frontend,
     title: "FrontEnd Development",
     description: "Am good at Html, Css ,React.js, Next.js,",
     link: "",
   },
   {
-    icon: assets.mobile_icon,
+    icon: assets.backend,
     title: "BackEnd Developemt",
     description: "Node.js, Express.js, Nest.js",
     link: "",
   },
   {
-    icon: assets.ui_icon,
+    icon: assets.db,
     title: "DataBase",
     description: "MongoDB, Postgrass Sql",
     link: "",
