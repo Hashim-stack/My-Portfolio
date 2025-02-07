@@ -71,6 +71,7 @@ const Work = (isDarkMode) => {
         ))}
       </motion.div>
 
+
       <motion.a
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}

@@ -37,6 +37,7 @@ const Contact = () => {
     }
   };
 
+  
   return (
     <motion.div
       initial={{ opacity: 0 }}
