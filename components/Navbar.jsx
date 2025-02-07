@@ -99,7 +99,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
           </a>
           <button className="block md:hidden ml-3" onClick={openMenu}>
             <Image
-              src={setIsDarkMode ? assets.menu_white : assets.menu_black}
+              src={setIsDarkMode ? assets.menu_black : assets.menu_white}
               alt=""
               className="w-6 "
             />
