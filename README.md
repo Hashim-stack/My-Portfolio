@@ -1,4 +1,7 @@
 PORTFOLIO
+
+A sleek and dynamic portfolio built with Next.js and Framer Motion, offering smooth animations, seamless transitions, and an eye-catching design. It features a dark and light mode toggle for a personalized experience and highlights my projects, skills, and expertise in web development.
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
